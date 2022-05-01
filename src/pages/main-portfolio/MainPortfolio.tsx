@@ -1,3 +1,4 @@
+import AuthorCard from "../../components/ui/author-card/AuthorCard";
 import "./style.scss";
 
 const MainPortfolio = () => {
@@ -12,14 +13,16 @@ const MainPortfolio = () => {
             Helping to focus the business goals on users.
           </p>
           <p className="main_texts">
-            I’m currently <span className="unavailable_color">unavailable.</span>{" "}
-            <br />
+            I’m currently{" "}
+            <span className="unavailable_color">unavailable.</span> <br />
             Currently building a world class solution{""}{" "}
             <a href="https://springblock.io">@SpringBlock.</a>
           </p>
         </div>
       </div>
-      <div className="main_portfolio_right">Card Section</div>
+      <div className="main_portfolio_right">
+        <AuthorCard />
+      </div>
     </div>
   );
 };
