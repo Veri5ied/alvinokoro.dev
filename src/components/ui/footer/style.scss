@@ -1,0 +1,37 @@
+.footer_container {
+    background: #121F2A;
+    height: 125px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10em;
+
+    margin-top: 20vh;
+    .footer_feedback {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;      
+        letter-spacing: -0.02em;
+        color: #5D87A8;
+    }
+
+    .footer_center {
+        text-align: center;
+    }
+
+    .footer_right {
+        text-align: center;
+        
+        .footer_socials {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        a {
+            cursor: pointer;
+        }
+    }
+}

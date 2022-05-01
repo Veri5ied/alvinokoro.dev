@@ -3,6 +3,7 @@ import { MainPage, NotFoundPage } from "./pages";
 import { Routes, Route } from "react-router-dom";
 import { INDEX_PAGE, NOT_FOUND_PAGE } from "./routes";
 import TopNavigation from "./components/ui/top-navigation/TopNavigation";
+import Footer from "./components/ui/footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path={NOT_FOUND_PAGE} element={<NotFoundPage />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -18,6 +18,7 @@ const MainPortfolio = () => {
             Currently building a world class solution{""}{" "}
             <a href="https://springblock.io">@SpringBlock.</a>
           </p>
+          <p className="main_texts">👇 Checkout what I'm working on</p>
         </div>
       </div>
       <div className="main_portfolio_right">
