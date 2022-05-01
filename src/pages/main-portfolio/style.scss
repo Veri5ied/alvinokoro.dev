@@ -1,0 +1,39 @@
+.main_portfolio_component {
+    padding-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main_portfolio_left {
+        .main_title {
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 70px;
+            letter-spacing: -0.04em;        
+            color: #F3F3F5;
+        }
+
+        .main_contents {
+            .main_texts {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: -0.02em;
+                color: #BDBDCF;
+                width: 480px;
+                margin: 2em 0;
+
+                .unavailable_color {
+                    color: rgb(238, 34, 34);
+                }
+
+                a {
+                    color: #3EBAFF;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

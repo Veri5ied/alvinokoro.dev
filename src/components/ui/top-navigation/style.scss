@@ -1,0 +1,52 @@
+@mixin  flex-row-spacing {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_navigation {
+    display: flex;
+    @include flex-row-spacing;
+    padding: 1em 0;
+
+    .top_navigation_left {
+        display: flex;
+        @include flex-row-spacing;
+        gap: 20px;
+
+        .top_navigation_title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;   
+            letter-spacing: -0.04em;
+            color: #F3F3F5;
+            cursor: pointer;
+        }
+
+        .top_navigation_status {
+            border: none;
+            width: 86px;
+            height: 31px;
+            background: #FEFEFF;
+            border-radius: 8px;
+            cursor: pointer;
+
+            //font styling
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: rgb(238, 34, 34);
+        }
+    }
+
+    .top_navigation_right {
+        display: flex;
+        @include flex-row-spacing;
+        gap: 20px;
+
+        a {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+}
