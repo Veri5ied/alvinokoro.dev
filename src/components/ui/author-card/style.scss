@@ -10,6 +10,43 @@
     cursor: pointer;
 }
 
+@mixin techBorderStyle {
+    background: #171717;
+    box-shadow: 0px 20px 32px rgba(5, 5, 16, 0.25);
+    border-radius: 16px;
+    height: 52px;
+    color: #3EBAFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.author_techs_box {
+    position: relative;
+    display: flex;
+    text-align: center;
+    .author_techs {
+        @include techBorderStyle;
+    }
+
+    .reactjs_box {
+        position: absolute;
+        left: -60px;
+        top: -55px;
+    }
+
+    .javascript_box {
+        position: absolute;
+        right: 10%;
+        top: -55px;
+    }
+}
+
 .author_card_container {
     display: flex;
     flex-direction: column;
