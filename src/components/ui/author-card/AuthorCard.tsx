@@ -25,12 +25,19 @@ const AuthorCard = () => {
           </div>
           <img src={MyAvatar} alt="alvin okoro" />
         </div>
+        <div className="author_techs_box">
+          <button className="author_techs nextjs_box">NextJs</button>
+          <button className="author_techs typescript_box">JavaScript</button>
+        </div>
         <div className="author_details">
           <h2 className="author_name">Alvin Okoro</h2>
           <h3 className="author_stack">Software Engineer</h3>
           <div className="icon_border">
             <img src={VSCodeIcon} alt="vscode icon" className="vscode_icon" />
           </div>
+        </div>
+        <div className="author_techs_box">
+          <button className="author_techs scss_box">SCSS</button>
         </div>
       </div>
     </div>
