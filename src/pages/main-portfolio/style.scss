@@ -16,6 +16,10 @@
             line-height: 70px;
             letter-spacing: -0.04em;        
             color: #F3F3F5;
+
+            @media screen and (max-width: 550px) {
+                font-size: 40px;
+            }
         }
 
         .main_contents {
