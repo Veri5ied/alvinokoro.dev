@@ -16,7 +16,7 @@ const MainPortfolio = () => {
             I’m currently{" "}
             <span className="unavailable_color">unavailable.</span> <br />
             Currently building a world class solution{""}{" "}
-            <a href="https://springblock.io">@SpringBlock.</a>
+            <a href="https://springblock.io" target="_blank" rel="noreferrer">@SpringBlock.</a>
           </p>
           <p className="main_texts">👇 Checkout what I'm working on</p>
         </div>

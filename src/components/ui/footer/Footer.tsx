@@ -45,7 +45,7 @@ const Footer = () => {
         <p className="footer_feedback">alvinuchenna14@gmail.com</p>
         <div className="footer_socials">
           {socialProfiles.map((profile) => (
-            <a href={profile.linkUrl} key={profile.id}>
+            <a href={profile.linkUrl} key={profile.id} target="_blank" rel="noreferrer">
               <img src={profile.icon} alt={profile.alt} />
             </a>
           ))}

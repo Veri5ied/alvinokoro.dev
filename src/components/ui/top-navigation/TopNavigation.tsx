@@ -39,7 +39,12 @@ const TopNavigation = () => {
       </div>
       <div className="top_navigation_right">
         {socialProfiles.map((profile) => (
-          <a href={profile.linkUrl} key={profile.id}>
+          <a
+            href={profile.linkUrl}
+            key={profile.id}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={profile.icon} alt={profile.alt} />
           </a>
         ))}
