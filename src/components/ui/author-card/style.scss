@@ -38,28 +38,38 @@
         position: absolute;
         left: -60px;
         top: -55px;
+
+        animation: float 4s ease-in-out infinite;
     }
 
     .javascript_box {
         position: absolute;
         right: 10%;
         top: -55px;
+
+        animation: floatRight 4s ease-in-out infinite;
     }
 
     .nextjs_box {
         position: absolute;
         left: -250px;
         top: -30px;
+
+        animation: floatRight 4s ease-in-out infinite;
     }
 
     .typescript_box {
         position: absolute;
         right: -200px;
+
+        animation: floatRight 4s ease-in-out infinite;
     }
 
     .scss_box {
         position: absolute;
         top: 50px;
+
+        animation: float 4s ease-in-out infinite;
     }
 }
 
@@ -118,5 +128,49 @@
             left: -60%;
             background: #0F202E;
         }
+    }
+}
+
+//animations
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floatRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes floatLeft {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
