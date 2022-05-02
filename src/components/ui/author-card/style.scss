@@ -56,6 +56,10 @@
         top: -30px;
 
         animation: floatRight 4s ease-in-out infinite;
+
+        @media screen and (max-width: 550px) {
+            left: -180px;
+        }
     }
 
     .typescript_box {
@@ -63,6 +67,10 @@
         right: -200px;
 
         animation: floatRight 4s ease-in-out infinite;
+
+        @media screen and (max-width: 550px) {
+            right: -180px;
+        }
     }
 
     .scss_box {

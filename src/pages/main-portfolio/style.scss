@@ -5,6 +5,8 @@
 
     @media screen and (max-width: 550px) {
         flex-direction: column-reverse;
+        gap: 6em;
+        align-items: center;
     }
 
     .main_portfolio_left {
@@ -26,6 +28,10 @@
                 color: #BDBDCF;
                 width: 480px;
                 margin: 2em 0;
+
+                @media screen and (max-width: 550px) {
+                   width: auto;
+                }
 
                 .unavailable_color {
                     color: rgb(238, 34, 34);

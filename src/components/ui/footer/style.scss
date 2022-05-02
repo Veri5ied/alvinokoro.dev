@@ -7,6 +7,12 @@
     align-items: center;
     gap: 10em;
 
+    @media screen and (max-width: 550px) {
+        gap: 5px;
+        flex-direction: column;
+        padding: 2px;
+    }
+
     margin-top: 20vh;
     .footer_feedback {
         font-style: normal;
