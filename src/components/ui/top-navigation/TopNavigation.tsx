@@ -2,6 +2,7 @@ import "./style.scss";
 import GitHub from "../../../assets/svgs/github.svg";
 import LinkedIn from "../../../assets/svgs/linkedin.svg";
 import Twitter from "../../../assets/svgs/twitter.svg";
+import toast, { Toaster } from "react-hot-toast";
 
 interface SocialProfile {
   id: number;
@@ -31,11 +32,24 @@ const socialProfiles: SocialProfile[] = [
   },
 ];
 const TopNavigation = () => {
+  const handleToast = ():void => {
+    toast("Sorry, I'm not available for a role!", {
+      icon: "👏",
+      style: {
+        borderRadius: "10px",
+        background: "#101010",
+        color: "#fff",
+      },
+    });
+  };
   return (
     <div className="top_navigation">
+      <Toaster />
       <div className="top_navigation_left">
         <h1 className="top_navigation_title">Alvin Okoro</h1>
-        <button className="top_navigation_status">Unavailable</button>
+        <button className="top_navigation_status" onClick={handleToast}>
+          Unavailable
+        </button>
       </div>
       <div className="top_navigation_right">
         {socialProfiles.map((profile) => (
