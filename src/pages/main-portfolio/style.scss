@@ -1,12 +1,20 @@
+@mixin responsiveFlex {
+    flex-direction: column-reverse;
+    gap: 6em;
+    align-items: center;
+}
+
 .main_portfolio_component {
     padding-top: 15vh;
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 550px) {
-        flex-direction: column-reverse;
-        gap: 6em;
-        align-items: center;
+        @include responsiveFlex;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @include responsiveFlex;
     }
 
     .main_portfolio_left {
@@ -35,6 +43,10 @@
 
                 @media screen and (max-width: 550px) {
                    width: auto;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    width: auto;
                 }
 
                 .unavailable_color {
