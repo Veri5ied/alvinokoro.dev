@@ -1,4 +1,5 @@
 import "./style.scss";
+import { motion } from "framer-motion";
 
 interface CardProps {
   imgUrl: string;
@@ -7,11 +8,15 @@ interface CardProps {
 }
 const Card = ({ imgUrl, linkUrl, altText }: CardProps) => {
   return (
-    <div className="card_container">
+    <motion.div
+      animate={{ rotate: 360 }}
+      transition={{ type: "spring", stiffness: 100 }}
+      className="card_container"
+    >
       <a href={linkUrl} target="_blank" rel="noreferrer">
         <img src={imgUrl} alt={altText} />
       </a>
-    </div>
+    </motion.div>
   );
 };
 
