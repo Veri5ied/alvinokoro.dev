@@ -1,0 +1,22 @@
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}   
+
+.project_card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 550px) {
+        @include flexColumn;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @include flexColumn;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
