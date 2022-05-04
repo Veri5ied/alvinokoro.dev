@@ -5,13 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     .bar {
         width: 0.875rem;
         height: 5rem;
-        background: #171717;
+        background: #3EBAFF;
         animation: bar-loading 1s infinite alternate;
         border-radius: 10px;
+        margin: 0 .2em;
         &:nth-child(2) {
             animation-delay: -0.2s;
         }
